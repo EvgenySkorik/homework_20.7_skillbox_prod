@@ -5,11 +5,19 @@ description = ""
 authors = [
     {name = "skorjen",email = "es@cstmarket.ru"}
 ]
-readme = "README.md"
+
 requires-python = ">=3.12"
 dependencies = [
+    "django (>=6.0.4,<7.0.0)",
+    "gunicorn (>=25.3.0,<26.0.0)",
+    "djangorestframework (>=3.17.1,<4.0.0)",
+    "django-filter (>=25.2,<26.0)",
+    "pillow (>=12.2.0,<13.0.0)",
+    "django-debug-toolbar (>=6.3.0,<7.0.0)"
 ]
 
+[tool.poetry]
+package-mode = false
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
